@@ -6,18 +6,23 @@ function toggleBio() {
         bio.classList.remove("show");
         facts.classList.remove("show");
         setTimeout(() => {
-            bio.style.display = "none";
-            facts.style.display = "none";
+            bio.style.visibility = "hidden";
+            facts.style.visibility = "hidden";
+            bio.style.opacity = "0";
+            facts.style.opacity = "0";
         }, 500); // Delay agar efek animasi tetap terlihat sebelum menghilang
     } else {
-        bio.style.display = "block";
-        facts.style.display = "block";
+        bio.style.visibility = "visible";
+        facts.style.visibility = "visible";
         setTimeout(() => {
             bio.classList.add("show");
             facts.classList.add("show");
+            bio.style.opacity = "1";
+            facts.style.opacity = "1";
         }, 10); // Sedikit delay agar transisi berjalan lancar
     }
 }
+
 
 // Galeri Foto dengan Navigasi Next & Previous
 let imageIndex = 0;
@@ -46,4 +51,8 @@ function nextImage() {
 
 window.onload = function () {
     updateGallery();
+    document.getElementById("bioSection").style.visibility = "hidden";
+    document.querySelector(".div-4").style.visibility = "hidden";
+    document.getElementById("bioSection").style.opacity = "0";
+    document.querySelector(".div-4").style.opacity = "0";
 };
