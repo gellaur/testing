@@ -1,5 +1,7 @@
 body {
     background: linear-gradient(to bottom, #ffe5ec, #ffccd5);
+    background-size: 100% 200%;
+    background-position: top;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
