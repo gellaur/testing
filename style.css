@@ -1,13 +1,15 @@
 body {
-    background: linear-gradient(to bottom, #ffe5ec, #ffccd5);
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    height: 100vh;
-    margin: 0;
-    text-align: left;
+background: linear-gradient(to bottom, #ffe5ec, #ffccd5);
+background-size: 100% 200%;
+background-position: top;
+font-family: Arial, Helvetica, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+height: 100vh;
+margin: 0;
+text-align: left;
 }
 
 .container {
