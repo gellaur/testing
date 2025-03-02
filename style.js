@@ -20,8 +20,10 @@ let imageSources = [
 ];
 
 function updateGallery() {
+    console.log("Gambar saat ini:", imageSources[imageIndex]); // Debugging
     document.getElementById("galleryImage").src = imageSources[imageIndex];
 }
+
 
 function prevImage() {
     imageIndex = (imageIndex - 1 + imageSources.length) % imageSources.length;
@@ -34,5 +36,5 @@ function nextImage() {
 }
 
 window.onload = function () {
-    updateImage(); 
+    updateGallery(); 
 };
